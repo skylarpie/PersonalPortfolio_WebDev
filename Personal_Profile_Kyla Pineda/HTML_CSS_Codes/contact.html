@@ -1,0 +1,51 @@
+<!-- 
+    CST8285 - Assignment 1
+    Name: Kyla Pineda
+    File Name: contact.html
+    Creation Date: February 16, 2023
+    Description: An html file that contains a form for 
+    the user to leave their contact information and their message
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="author" content="Kyla Pineda">
+        <meta name="keywords" content="Computer, Programming, Tech, Java, HTML, Projects"> 
+        <meta name="description" content=""> 
+        <link rel="stylesheet" href="style.css">
+        <title>Contact</title>
+    </head>
+<body>
+    <header>
+        <nav id = "index_links"> 
+            <a href="index.html">Home </a>
+            <a href="resume.html">Resume </a>
+            <a href="courses.html">Courses </a>
+        </nav>      
+    </header>
+    <main id = "contact_container" class = "main_container">
+        <h1>Contact Me:</h1>
+        <form id="contact_form" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="format for email is xxx@yyy.zzz" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" minlength="3" maxlength="50" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" minlength="5" maxlength="750" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer id = "footer-line" class = "ends">
+        
+        <p>Formatting and code by Kyla Pineda.</p>
+    </footer>
+</body>
+</html>

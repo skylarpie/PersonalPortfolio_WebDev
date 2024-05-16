@@ -1,0 +1,271 @@
+/*
+    CST8285 - Assignment 1
+    Name: Kyla Pineda
+    File Name: style.css
+    Creation Date: February 16, 2023
+    Description: A css file that adds external styling of the html files called;
+      index.html, resume.html, courses.html and contact.html
+    */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(220, 223, 255);
+  font-family: FreeMono, monospace;
+  color: rgb(44, 42, 102);
+}
+
+.general_paragraph {
+  color: rgb(30, 29, 61);
+}
+
+footer.ends {  /* footer */
+  padding: 30px;
+  text-align: right;
+  font-size: 75%;
+  margin-bottom: 30px;
+}
+  
+.main_container { 
+  display: flex;
+  justify-content: space-between; /* Stack items horizontally */
+  border: 10px solid rgb(44, 42, 102);
+  margin: 60px;
+}
+
+#index_links, .static_nav{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;  
+  margin: 30px;
+  font-size: 100%;
+}
+
+#index_links a, .static_nav a{
+  text-decoration: none;
+  margin: 0 2%;
+  font-weight: bold;
+}
+
+#index_links a:hover, .static_nav a:hover {
+  color: rgb(135, 131, 236);
+}
+
+.static_nav {
+  background-color: rgb(160, 162, 189);
+  position: sticky;
+  padding: 15px;
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.static_nav a {
+  margin: 0 2%;
+}
+
+/* INDEX STYLE */
+
+
+#main_title {
+  font-size: 400%;
+}
+
+#second_title {
+  font-size: 250%;
+}
+
+
+#left_half {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.index_element {
+  margin: 10px;
+  padding: 15px;
+  font-size: 100%;
+}
+
+#picture {
+  width: 40%; /* Adjust width as needed */
+  margin: 10px;
+}
+
+#ac_logo img{
+  width: 25px;
+  margin-top:auto;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+/* RESUME STYLE */
+.italic {
+  font-style: italic;
+}
+
+#resume_container {
+  flex-direction: column; /* Stack items vertically */
+  
+}
+
+#resume_heading {
+  text-align: center;
+  font-size: 150%;
+  padding: 30px;
+}
+
+#resume_h1 {
+  font-size: 300%;
+}
+
+#work_experience {
+  text-align: center;
+  font-size: 150%;
+  padding: 5px;
+}
+
+#experience_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.experience {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+#skills {
+  text-align: center;
+  font-size: 150%;
+  padding: 5px;
+}
+
+#skills_container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills_list { 
+  
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+#tech_skills, #soft_skills {
+  list-style-type: none;
+}
+
+#education {
+  text-align: center;
+  font-size: 150%;
+  padding: 5px;
+}
+
+/* COURSES STYLE */
+#program_desc {
+  text-align: center;
+  font-size: 150%;
+  padding: 15px;
+}
+
+#course_container {
+  flex-direction: column; /* Stack items vertically */
+}
+
+.course_level {
+  text-align: center;
+  font-size: 100%;
+  padding: 10px;
+}
+
+
+.course_item {
+  display: flex;
+}
+
+.course_item img {
+  width: 50%; /* Adjust the width as needed */
+  margin-top: 10px; /* Adjust the spacing between text and image */
+}
+
+.text_area {
+  width: 50%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.course_item h3,
+.course_item p {
+  width: 95%; /* Adjust the width as needed */
+  margin-bottom: 10px; /* Adjust the spacing between text and image */
+  font-size: 150%;
+}
+
+.right_image{
+  text-align: right;
+}
+
+.left_image{
+  text-align: left;
+}
+
+.left_image img {
+  padding: 15px;
+  order: -1; /* Change the order of the image for left_image class */
+}
+
+#visit {
+  text-align: center;
+  font-size: 125%;
+  padding: 30px;
+}
+
+
+/* CONTACT STYLE*/
+#contact_container {
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+  font-size: 150%;
+  padding: 30px;
+}
+
+#contact_form {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin-top: 20px; /* Add some top margin for better spacing */
+}
+
+#contact_form label {
+  margin-bottom: 20px; /* Add space below each label */
+}
+
+#contact_form input,
+#contact_form textarea {
+  width: 100%; /* Adjust the width as needed */
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 20px; /* Add space below each input */
+  font-size: 75%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+#contact_form textarea {
+  width: 200%;
+  height: 200px;
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+#contact_form input[type="submit"] {
+  background-color: rgb(160, 162, 189);
+  color: #fff;
+  cursor: pointer;
+  font-size: 75%;
+}
